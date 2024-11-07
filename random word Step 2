@@ -1,0 +1,13 @@
+#random module
+import random
+
+# milestone_2.py
+
+# Step 1: Create a list containing the names of your 5 favorite fruits
+word_list = ["apple", "banana", "mango", "strawberry", "watermelon"]
+
+#random word generator
+word = random.choice(word_list)
+
+#print the random word
+print(word)
