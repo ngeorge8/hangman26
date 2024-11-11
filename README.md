@@ -20,27 +20,14 @@ The Hangman class also has two methods. Both methods also update value of some a
 
 # Technologies Used
 Python: The project is built with Python and utilizes core libraries, including random for selecting random words.
-# Getting Started
-  # Prerequisites
-You must have python installed 
-# Installation
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/ngeorge8/hangman26.git
-cd hangman26
-No additional libraries are required as this project only uses standard Python modules.
-# Running the Game
-To start the game, run the milestone_5.py script:
 
-bash
-Copy code
-python milestone_5.py
 
-# Project Status
+## Project Status
+
 The game is fully functional. Future improvements could include:
 
--Adding a graphical interface (GUI) for easier interaction.
--Allowing custom word lists from a file or online source.
--Implementing difficulty levels with variable word lengths or lives.
+- Adding a graphical interface (GUI) for easier interaction.
+- Allowing custom word lists from a file or online source.
+- Implementing difficulty levels with variable word lengths or lives.
+
 
