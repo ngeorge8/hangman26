@@ -1,59 +1,85 @@
-# Hangman
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
-
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
-
-
-Hangman-AiCore Project
+Hangman Game Project
 Table of Contents
-Description
-Installation
+Project Description
+Features
+Technologies Used
+Getting Started
 Usage
 File Structure
+Project Status
 License
-This is a command-line implementation of the classic Hangman game in Python. The program generates a random word from a list of words, and the user must guess the letters in the word one at a time. The user has a limited number of guesses, and each incorrect guess results in the drawing of a new part of a hangman figure. If the user guesses all the letters in the word before running out of guesses, they win the game. Otherwise, the hangman figure is fully drawn, and the user loses the game. Hangman Game
+Project Description
+This is a command-line Hangman game implemented in Python. The objective is to guess a hidden word, letter by letter, within a limited number of attempts. If you guess all unique letters in the word before exhausting your lives, you win the game. If you use all available guesses without completing the word, you lose.
 
+Purpose
+This project was developed as a practice exercise in Python programming, focusing on:
+
+Working with classes and object-oriented programming.
+Using control flow mechanisms like loops and conditional statements.
+Managing user input and basic input validation.
+Practicing modular design and code readability with functions and classes.
+Features
+Random Word Selection: The game selects a word randomly from a predefined list.
+Guess Validation: Ensures that only single alphabetical characters are accepted as guesses.
+Tracking Guesses and Lives: Keeps track of the player’s guesses and remaining lives.
+Game Ending Conditions: Automatically ends the game when either the word is completely guessed or lives run out.
+Clear Feedback: Displays messages guiding the user through the game and providing feedback on each guess.
+Technologies Used
+Python 3: The project is built with Python and utilizes core libraries, including random for selecting random words.
 Getting Started
-Clone this repository to your local machine.
-
-Install Python 3 on your machine, if it is not already installed.
-Open your terminal or command prompt and navigate to the directory containing the repository.
-Run the command python milestone_3.py to start the game.
-How to Play
-The computer will generate a random word.
-The player will have to guess the letters in the word one at a time.
-The player has 6 attempts to guess the word correctly, otherwise the game is over.
-The player will be shown a series of dashes representing the letters in the word. The dashes will be replaced with the correctly guessed letters as they are guessed.
-If the player guesses a letter that is not in the word, they will lose an attempt.
-If the player guesses a letter that is in the word, they will be informed and the corresponding dashes will be replaced with the letter.
-If the player correctly guesses the entire word before running out of attempts, they win the game.
-Description
-The Hangman Game Project is a Python-based implementation of the classic word-guessing game. The aim of the project is to provide an interactive and entertaining game where players try to guess letters to uncover a hidden word within a limited number of attempts. Through this project, we practice object-oriented programming, user input validation, and game logic implementation.
-
+Prerequisites
+Python 3.x installed on your machine. You can download Python here.
 Installation
-To play the Hangman game, follow these steps:
+Clone this repository:
+bash
+Copy code
+git clone https://github.com/your-username/hangman-project.git
+cd hangman-project
+No additional libraries are required as this project only uses standard Python modules.
+Running the Game
+To start the game, run the milestone_5.py script:
 
-Clone this repository to your local machine using:
-
-https://github.com/montahac/Hangman-AiCore.git
-Navigate to the project directory:
-
-cd hangman-game
-Run the game by executing the Python script:
-
+bash
+Copy code
 python milestone_5.py
 Usage
-The game will display underscores representing the letters in the word to guess.
-Enter a single alphabetical character to guess a letter.
-The game will provide feedback about the correctness of the guess and the remaining lives.
-Continue guessing until you either guess the word or run out of lives.
-File Structure
-The project files are structured as follows:
+Once you start the game:
 
-hangman-game/
-├── milestone_4.py
-├── milestone_5.py
-└── README.md
-milestone_4.py: Contains the Hangman class definition and game logic implementation up to Milestone 4.
-milestone_5.py: Contains the complete Hangman game implementation up to Milestone 5, including the play_game function.
-README.md: This README file provides information about the project.
+The program will randomly select a word from a predefined list.
+You’ll be prompted to guess a letter.
+Input Requirements:
+Only single alphabetical characters are allowed.
+Repeated guesses will prompt a reminder that the letter was already tried.
+You’ll receive feedback after each guess, and the game will notify you of the current state of the word, remaining lives, and when the game is won or lost.
+Example Gameplay
+Starting Prompt:
+css
+Copy code
+Guess a letter: 
+Valid Guess:
+arduino
+Copy code
+Good guess! 'a' is in the word.
+Invalid Guess:
+vbnet
+Copy code
+Sorry, 'x' is not in the word. You have 4 lives left.
+File Structure
+bash
+Copy code
+hangman-project/
+│
+├── milestone_1.py          # Initial project setup with list creation
+├── milestone_2.py          # Adds word selection and input handling
+├── milestone_3.py          # Adds continuous guess validation loop
+├── milestone_4.py          # Introduces Hangman class structure
+├── milestone_5.py          # Complete game with play loop and win/lose conditions
+└── README.md               # Project documentation
+Project Status
+The game is fully functional. Future improvements could include:
+
+Adding a graphical interface (GUI) for easier interaction.
+Allowing custom word lists from a file or online source.
+Implementing difficulty levels with variable word lengths or lives.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
