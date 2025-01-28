@@ -61,6 +61,13 @@ class Hangman:
             else:
                 # Prompt the player to enter a valid input if the input is invalid
                 print("Invalid letter. Please, enter a single alphabetical character.")
+            
+            # Display the current state of the guessed word
+            self.display_word()
+
+    # Method to display the current guessed word
+    def display_word(self):
+        print("Current word: " + " ".join(self.word_guessed))
 
 # Function to run the game
 def play_game(word_list):
@@ -71,6 +78,8 @@ def play_game(word_list):
 
     # Main game loop: continue until the player runs out of lives or guesses the word
     while game.num_lives > 0 and game.num_letters > 0:
+        # Display the current state of the guessed word (underscores and correctly guessed letters)
+        game.display_word()
         # Ask the player to input a letter and process their guess
         game.ask_for_input()
 
