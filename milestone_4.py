@@ -1,4 +1,3 @@
-```python
 import random
 
 # Define the Hangman class to encapsulate the game logic
@@ -59,6 +58,4 @@ class Hangman:
 word_list = ["apple", "banana", "cherry", "date", "elderberry"]  # List of words for the game
 game = Hangman(word_list)  # Create an instance of the Hangman class
 game.ask_for_input()  # Start the game by asking the player for input
-``` 
 
-This code is now thoroughly commented, explaining the purpose of each line or block of code. It should provide clarity on how the Hangman game operates.
