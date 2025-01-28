@@ -38,8 +38,11 @@ class Hangman:
 
     # Define a method to handle user input for guessing letters
     def ask_for_input(self):
-        while True:  # Loop until valid input is provided
-            guess = input("Enter a single letter: ")
+    while True:  
+        guess = input("Guess a letter: ")
+        # Check input logic
+        self.display_word()  # This is called after the guess is processed to show the current word state
+
             
             # Check if the input is valid (a single alphabetical character)
             if len(guess) != 1 or not guess.isalpha():
